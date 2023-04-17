@@ -55,7 +55,7 @@ export const CartContextProvider = (props)=>{
 
   const removeItem = (id)=>{
     const newCartItems = cartItems.filter((cartItem)=>{
-      if(cartItem.id != id){
+      if(cartItem.id !== id){
         return cartItem
       }
     })
